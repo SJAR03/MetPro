@@ -9,3 +9,4 @@
 | scanf()      | scanf(formato_de_entrada, &variable);           | stdio.h    | Lee datos de entrada formateados desde la entrada estándar y los almacena en variables             |
 | printf()     | printf(formato_de_salida, variable);            | stdio.h    | Escribe datos de salida formateados en la salida estándar                                          |
 | getline()    | getline(&cadena_de_caracteres, &tamaño, stdin); | stdio.h    | Lee una línea de caracteres desde la entrada estándar, y la almacena en una variable de tipo cadena|
+
