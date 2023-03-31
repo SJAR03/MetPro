@@ -18,9 +18,9 @@ int main() {
     cantidad = simples + dobles + triples;
     subtotal = simples * 50 + dobles * 75 + triples * 100;
     
-    printf("El precio total es: C$%.2f\n", subtotal);
+    printf("\nEl precio total es: C$%.2f\n", subtotal);
     
-    printf("¿Como desea pagar? (E)fectivo o (T)arjeta: ");
+    printf("¿Como desea pagar? (E)fectivo o (T)arjeta (Ingrese 't' para usar la funcion de tarjeta): ");
     scanf(" %c", &metodo_pago);
     
     if (metodo_pago == 'T' || metodo_pago == 't') {
@@ -30,7 +30,7 @@ int main() {
         total = subtotal;
     }
     
-    printf("Total a pagar: C$%.2f\n", total);
+    printf("\nTotal a pagar: C$%.2f\n", total);
     
     return 0;
 }
