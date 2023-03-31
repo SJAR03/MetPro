@@ -262,7 +262,17 @@ void bonoEmpresa() {
 
     // Imprimir resultados
     printf("\nSalario bruto: C$%.2f\n", salario_bruto);
-    printf("Evaluacion recibida: %d\n", evaluacion);
+    
+    if (evaluacion <= 5) {
+        printf("Evaluacion recibida: Deficiente - %d\n", evaluacion);
+    } else if (evaluacion > 5 && evaluacion <=8) {
+        printf("Evaluacion recibida: Aceptable - %d\n", evaluacion);
+    } else if (evaluacion > 8 && evaluacion <=10) {
+        printf("Evaluacion recibida: Excelente - %d\n", evaluacion);
+    } else {
+        printf("No valido");
+    }
+
     if (incentivo > 0) {
         printf("Bono/incentivo recibido: C$%.2f\n", incentivo);
     } else {
