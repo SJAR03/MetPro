@@ -1,3 +1,6 @@
+// Para que el programa funcione correctamente, todos los archivos de los demás
+// programas deberian estar en una misma carpeta, de esa forma hace el include sin problemas.
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "Array1.c"
@@ -14,7 +17,7 @@ int main() {
     while (opcion_principal != 3) {
         // Menú principal
         printf("\nBienvenido al programa\n");
-        printf("Seleccione una opción:\n");
+        printf("Seleccione una opcion:\n");
         printf("1. Arreglos\n");
         printf("2. Estructuras\n");
         printf("3. Salir\n");
@@ -28,7 +31,7 @@ int main() {
                 printf("1. Arreglo 1\n");
                 printf("2. Arreglo 2\n");
                 printf("3. Arreglo 3\n");
-                printf("4. Volver al menú principal\n");
+                printf("4. Volver al menu principal\n");
                 printf("Opcion: ");
                 scanf("%d", &opcion_sub);
 
@@ -45,7 +48,7 @@ int main() {
                     case 4:
                         break;
                     default:
-                        printf("\nOpción inválida.\n");
+                        printf("\nOpción invalida.\n");
                         break;
                 }
                 break;
@@ -56,7 +59,7 @@ int main() {
                 printf("1. Estructura 1\n");
                 printf("2. Estructura 2\n");
                 printf("3. Estructura 3\n");
-                printf("4. Volver al menú principal\n");
+                printf("4. Volver al menu principal\n");
                 printf("Opcion: ");
                 scanf("%d", &opcion_sub);
 
@@ -73,7 +76,7 @@ int main() {
                     case 4:
                         break;
                     default:
-                        printf("\nOpcion inválida.\n");
+                        printf("\nOpcion invalida.\n");
                         break;
                 }
                 break;
@@ -83,7 +86,7 @@ int main() {
                 break;
 
             default:
-                printf("\nOpcion inválida.\n");
+                printf("\nOpcion invalida.\n");
                 break;
         }
     }
